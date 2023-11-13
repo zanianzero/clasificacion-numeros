@@ -86,19 +86,5 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    function mostrarImagen(input) {
-      var vistaPrevia = document.getElementById('imagen-previa');
-      var archivo = input.files[0];
-      var lector = new FileReader();
-
-      lector.onload = function (e) {
-        vistaPrevia.src = e.target.result;
-        vistaPrevia.style.display = 'block'; // Muestra la imagen previa
-      };
-
-      lector.readAsDataURL(archivo);
-    }
-  </script>
 </body>
 </html>
